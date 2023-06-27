@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --color-bg: 239 239 239;
+    --color-bg-sidebar: 253 253 253;
+    --color-bg-sidebar-selected: 233 241 231;
+    --color-bg-sidebar-header: 244 244 244;
+    --color-text-default: 45 45 45;
+    --color-icon-default: 85 85 85;
+    --color-primary: 38 123 12;
+  }
+
+  :root[class~="dark"] {
+    --color-bg: 45 45 45;
+    --color-bg-sidebar: 74 74 74;
+    --color-bg-sidebar-selected: 52 62 50;
+    --color-bg-sidebar-header: 49 49 49;
+    --color-text-default: 239 239 239;
+    --color-icon-default: 202 202 202;
+    --color-primary: 60 190 20;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
